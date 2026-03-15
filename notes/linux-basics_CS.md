@@ -71,3 +71,11 @@
 - používá se pro určení, která zařízení jsou ve stejné síti, kam se posílá traffic
 - zjistíme příkazem: ip a
 
+  ## IP setting
+- sudo nmcli con show           =  zjistí název connection, např. "System eth0"
+- sudo nmcli con mod "System eth0" ipv4.addresses 192.168.25.50/24
+- sudo nmcli con mod "System eth0" ipv4.gateway 192.168.25.1
+- sudo nmcli con mod "System eth0" ipv4.dns 192.168.25.1
+- sudo nmcli con mod "System eth0" ipv4.method manual
+- sudo nmcli con up "System eth0"
+
