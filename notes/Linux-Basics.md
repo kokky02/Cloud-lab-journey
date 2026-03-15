@@ -21,3 +21,14 @@ Commands used:
 ip a
 ip route
 cat /etc/resolv.conf
+
+### Linux Firewall and Ports
+
+Commands used:
+sudo firewall-cmd --state
+sudo firewall-cmd --list-all
+ss -tulnp
+
+Firewall running: Yes
+Allowed services: ssh, dhcpv6-client, cockpit
+Open ports: 22, 53, 323, 5355, 9090
