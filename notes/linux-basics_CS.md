@@ -49,7 +49,25 @@
   * ochrana proti OOM (Out Of Memory)
   * stabilita serveru
   * některé služby ho vyžadují
+  * zjištění swap: free -h
 
+## Kernel
+- jádro systému
+- spravuje CPU scheduling
+- spravuje paměť (RAM)
+- komunikuje s hardwarem přes drivery
+- spravuje procesy
+- spravuje souborové systémy
+- spravuje síť
+- zjištění verze kernelu: uname -r
 
+## Filesystem
+- způsob, jakým jsou data organizována na disku
+- nap%r: ext4 (nejčastěji v Linuxu), xfs (často u Fedory), btrds, ntfs (Windows)
+- určuje jak se ukládají soubory, jak fungují práva, jak se řeší žurnálování
+- zjistíme příkazem: df -T, nebo lsblk -f
 
+## Rozsah IP 
+- používá se pro určení, která zařízení jsou ve stejné síti, kam se posílá traffic
+- zjistíme příkazem: ip a
 
