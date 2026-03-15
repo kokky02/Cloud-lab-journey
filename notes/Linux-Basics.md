@@ -13,22 +13,22 @@ Swap is disk space used as virtual memory when RAM is exhausted.
 Fedora Server uses XFS as the main filesystem for performance and scalability.
 
 ### Linux Networking
-IP address: 192.168.25.41  
-Gateway: 192.168.25.1  
-DNS: 192.168.25.1  
+- IP address: 192.168.25.41  
+- Gateway: 192.168.25.1  
+- DNS: 192.168.25.1  
 
-Commands used:
-ip a
-ip route
-cat /etc/resolv.conf
+### Commands used:
+- ip a
+- ip route
+- cat /etc/resolv.conf
 
 ### Linux Firewall and Ports
 
-Commands used:
-sudo firewall-cmd --state
-sudo firewall-cmd --list-all
-ss -tulnp
+### Commands used:
+- sudo firewall-cmd --state
+- sudo firewall-cmd --list-all
+- ss -tulnp
 
-Firewall running: Yes
-Allowed services: ssh, dhcpv6-client, cockpit
-Open ports: 22, 53, 323, 5355, 9090
+- Firewall running: Yes
+- Allowed services: ssh, dhcpv6-client, cockpit
+- Open ports: 22, 53, 323, 5355, 9090
