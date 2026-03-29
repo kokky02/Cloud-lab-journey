@@ -19,3 +19,19 @@ Build a virtualized lab environment to simulate cloud infrastructure.
 ✔ Hyper-V configured  
 ✔ Windows Server VM installed  
 ✔ Fedora Server VM installed  
+
+## Security
+### SSH Hardening
+
+Configured secure SSH access on the Fedora VM:
+
+- Disabled password authentication
+- Disabled root login
+- Enabled SSH key authentication only
+
+This ensures that the server can only be accessed using a private SSH key, which significantly improves security compared to password-based login.
+
+### Verification
+
+- Successfully connected to the server using SSH key authentication
+- Confirmed that password login is no longer allowed
